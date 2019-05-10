@@ -1,0 +1,59 @@
+<!-- Developer: Praveen Annadanam
+Created date: 06/05/2019
+Project Name: Game City
+ -->
+
+
+<h2>Welcome To GameCity! &nbsp; Your Balance Amount is Rs.600</h2>
+
+<br/>
+
+<div class="jumbotron">
+<div class="container">
+  <div class="col-md-12">
+    
+    <br>
+
+    <br>
+
+<!-- Table to diplay the game details -->
+
+
+    <table class="table table-bordered  table-hover" style="margin-left: 60px">
+
+      <thead style="color:black">
+
+          <th style="width: 8%" >ID</th>
+
+          <th style="width: 20%">Game Name</th>
+
+          <th style="width: 15%">Price</th>
+
+          <th style="width: 20%">Actions</th>
+
+      </thead>
+
+
+      <tbody *ngFor="let game of games ">
+
+
+          <td>{{game.id}}</td>
+
+
+          <td>{{game.gName}}</td>
+
+
+          <td>{{game.price}}</td>
+
+          <td>
+
+            <a href="http://localhost:4200/success" (click)=playNow()>PlayNow</a>
+
+          </td>
+
+      </tbody>
+
+    </table>
+  </div>
+  </div>
+</div>
